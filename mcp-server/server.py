@@ -257,5 +257,8 @@ def undo_pdf_change(session_id: str) -> str:
     except Exception as e:
         return f"Error: {str(e)}"
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == "__main__":
+    main()

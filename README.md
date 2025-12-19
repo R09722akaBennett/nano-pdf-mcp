@@ -1,3 +1,4 @@
+<!-- mcp-name: io.github.R09722akaBennett/nano-pdf-mcp -->
 # NanoPDF MCP Server
 
 NanoPDF MCP Server is a Model Context Protocol (MCP) implementation that brings AI-powered PDF editing and generation capabilities directly to Claude Desktop. It enables users to modify existing PDF pages or generate new ones using Google's Gemini 3 Pro model, all within a privacy-focused local environment.

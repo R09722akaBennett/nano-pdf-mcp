@@ -1,7 +1,7 @@
 [project]
 name = "nano-pdf-mcp"
 version = "0.1.0"
-description = "NanoPDF MCP Server for Claude Desktop"
+description = "NanoPDF MCP Server"
 requires-python = ">=3.10"
 dependencies = [
     "fastmcp>=2.14.0",
@@ -15,8 +15,16 @@ dependencies = [
     "pydantic>=2.0.0",
 ]
 
+[project.scripts]
+nanopdf = "server:main" 
+
 [tool.hatch.build.targets.wheel]
 packages = ["."]
+exclude = [
+  "/.venv",
+  "/tests",
+  "*.pdf",
+]
 
 [build-system]
 requires = ["hatchling"]
