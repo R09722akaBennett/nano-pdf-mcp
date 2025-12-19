@@ -18,7 +18,7 @@ htmlcov/
 .env
 mcp-server/.env
 !mcp-server/output/
-*.pdf
+!mcp-server/output/sessions/*/*.pdf
 debug_*.png
 debug_*.txt
 temp_page_*.pdf
