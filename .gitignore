@@ -1,65 +1,35 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-
-# Distribution / packaging
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-venv/
 env/
-ENV/
+venv/
 .venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
 
-# uv
-uv.lock
-
-# Environment variables
+# MCP / Project specific
 .env
-.env.local
-/.env
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Project specific
+mcp-server/.env
+!mcp-server/output/
 *.pdf
-!sample_deck.pdf
-!assets/*.pdf
 debug_*.png
 debug_*.txt
 temp_page_*.pdf
 edited_*.pdf
 
-# Allow assets
-!assets/
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
+# OS
+.DS_Store
+Thumbs.db
