@@ -28,7 +28,7 @@ Calls `edit_pdf_page(session_id="...", page_number=1, prompt="...")`
 
 **Result:**
 The response will include the **Latest Version path**, for example: 
-`.../nano-pdf-mcp/output/sessions/{id}/v1_abcdef.pdf`
+`.../mcp-server/output/sessions/{id}/v1_abcdef.pdf`
 
 ---
 
@@ -57,7 +57,7 @@ Because the server saves a new file for every change, you can always go back.
 
 1. **State Page Numbers**: Always specify which page you want to modify to avoid ambiguity.
 2. **Accessing Files**: To see your results, use the "Latest Version" path provided after each successful tool call.
-3. **Clean Up**: All data is inside the `output/` folder. You can manually delete session folders if you want to free up space.
+3. **Clean Up**: All data is inside the `mcp-server/output/` folder. You can manually delete session folders if you want to free up space.
 
 ---
 

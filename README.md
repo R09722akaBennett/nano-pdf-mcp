@@ -39,7 +39,10 @@ A Google Gemini API key is required to power the AI features.
 This project uses `uv` for lightning-fast Python package management.
 
 ```bash
+# Navigate to the server directory
 cd mcp-server
+
+# Install dependencies
 uv sync
 ```
 
@@ -57,7 +60,7 @@ Add the NanoPDF server to your Claude Desktop configuration:
       "args": [
         "run",
         "--directory",
-        "/Users/username/nano-pdf-mcp/nano-pdf-mcp", # replace with your mcp-server path
+        "/Users/username/nano-pdf-mcp/mcp-server", # replace with your mcp-server path
         "server.py"
       ]
     }
@@ -66,7 +69,7 @@ Add the NanoPDF server to your Claude Desktop configuration:
 ```
 
 > [!IMPORTANT]
-> Ensure the `--directory` path is the absolute path to your `mcp-server` folder.
+> Change `username` to your actual macOS username. Ensure the `--directory` path is the absolute path to your `mcp-server` folder.
 
 ## 📖 Usage Guide
 
@@ -79,11 +82,14 @@ For detailed tool descriptions and workflow examples, please refer to the [Usage
 
 ## 📂 Project Structure
 
-- `server.py`: Main MCP server entry point and tool definitions.
-- `mcp_pdf_utils.py`: PDF processing, OCR, and rendering logic.
-- `mcp_ai_utils.py`: Gemini 3 Pro Vision API integration.
-- `history_manager.py`: Local session and version history tracker.
-- `output/`: Local storage for sessions, previews exports.
+- `mcp-server/`: Core MCP server implementation.
+  - `server.py`: Main entry point and tool definitions.
+  - `mcp_pdf_utils.py`: PDF processing, OCR, and rendering logic.
+  - `mcp_ai_utils.py`: Gemini Pro Vision API integration.
+  - `history_manager.py`: Local session and version history tracker.
+  - `output/`: Local storage for sessions and previews.
+- `LICENSE`: Project license (MIT).
+- `USAGE.md`: Detailed usage instructions and examples.
 
 ## 🤝 Acknowledgements
 
