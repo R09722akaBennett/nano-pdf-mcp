@@ -1,0 +1,1 @@
+# NanoPDF MCP Server Package

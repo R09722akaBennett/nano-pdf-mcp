@@ -1,0 +1,23 @@
+[project]
+name = "nano-pdf-mcp"
+version = "0.1.0"
+description = "NanoPDF MCP Server for Claude Desktop"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.14.0",
+    "mcp>=1.0.0",
+    "google-genai>=0.3.0",
+    "pdf2image>=1.17.0",
+    "pypdf>=3.0.0",
+    "pytesseract>=0.3.10",
+    "Pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
