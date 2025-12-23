@@ -29,3 +29,8 @@ exclude = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://github.com/R09722akaBennett/nano-pdf-mcp"
+Repository = "https://github.com/R09722akaBennett/nano-pdf-mcp"
+Issues = "https://github.com/R09722akaBennett/nano-pdf-mcp/issues"

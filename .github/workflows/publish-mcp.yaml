@@ -1,0 +1,25 @@
+name: Publish MCP Server
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install mcp-publisher
+        run: |
+          curl -fsSL https://modelcontextprotocol.io/install-publisher.sh | sh
+
+      - name: Publish to MCP Registry
+        run: |
+          mcp-publisher login github-oidc
+          mcp-publisher publish

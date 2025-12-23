@@ -1,0 +1,15 @@
+FROM python:3.12
+
+EXPOSE 8000
+WORKDIR /app
+
+COPY . ./
+
+RUN pip install --no-cache-dir -r requirements.txt
+ENV AGNO_MONITOR=true
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    LANG=C.UTF-8
+
+ENTRYPOINT ["uv", "run", "server.py"]
+# CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"] # DEV

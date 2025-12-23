@@ -2,16 +2,20 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.R09722akaBennett/nano-pdf-mcp",
   "description": "AI-powered PDF editing and generation MCP server using Gemini Pro.",
+  "title": "NanoPDF",
   "repository": {
     "url": "https://github.com/R09722akaBennett/nano-pdf-mcp",
-    "source": "github"
+    "source": "github",
+    "subfolder": "mcp-server"
   },
   "version": "0.1.0",
   "packages": [
     {
       "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
       "identifier": "nano-pdf-mcp",
       "version": "0.1.0",
+      "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
       },
@@ -20,7 +24,6 @@
           "name": "GEMINI_API_KEY",
           "description": "Google AI Studio API key for Gemini Pro",
           "isRequired": true,
-          "format": "string",
           "isSecret": true
         }
       ]
