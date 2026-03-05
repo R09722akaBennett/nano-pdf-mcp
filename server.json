@@ -11,11 +11,8 @@
   "version": "0.1.0",
   "packages": [
     {
-      "registryType": "pypi",
-      "registryBaseUrl": "https://pypi.org",
-      "identifier": "nano-pdf-mcp",
-      "version": "0.1.0",
-      "runtimeHint": "uvx",
+      "registryType": "oci",
+      "identifier": "docker.io/taibennett/nano-pdf-mcp:0.1.0",
       "transport": {
         "type": "stdio"
       },
